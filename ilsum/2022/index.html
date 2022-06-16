@@ -16,7 +16,7 @@
     <style>
         /* Remove the navbar's default margin-bottom and rounded borders */
         /* Add a gray background color and some padding to the footer */
-        
+
         footer {
             background-color: #f2f2f2;
             padding: 25px;
@@ -24,38 +24,38 @@
             bottom: 0;
             width: 100%;
         }
-        
+
         p {
-            font-size: 16px;
+            font-size: 20px;
         }
-        
+
         .nav a.active {
             background-color: #078186;
             color: white;
         }
-        
+
         .nav a {
             color: black;
-            font-size: 16px;
+            font-size: 18px;
         }
-        
+
         .nav a:hover {
             color: #078186;
         }
-        
+
         .nav-test {
             background-color: #f2f2f2;
             padding: 20px
         }
-        
+
         .panel-group {
             padding: 5px
         }
-        
+
         .jumbotron {
             position: relative;
         }
-        
+
         #logo {
             position: absolute;
             top: 1px;
@@ -86,22 +86,25 @@
             <div class="col-sm-2 nav-test">
                 <ul class="nav nav-pills nav-stacked ">
                     <li class="nav-item ">
-                        <a class="nav-link active" href="index.html">Overview<span class="sr-only">(current)</span></a>
+                        <a class="nav-link active" href="index.html">Track Description<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="call_for_participation.html">Call for Participation</a>
+                        <a class="nav-link " href="dataset.html">Dataset and Evaluation</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="registration.html">Registration</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="submission.html">Submission</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="important_dates.html">Important dates</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="organizers.html">Organizers</a>
+                        <a class="nav-link" href="announcement.html">Announcement</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="dataset.html">Datasets</a>
+                        <a class="nav-link" href="organizers.html">Organizers</a>
                     </li>
 
                 </ul>
@@ -119,29 +122,38 @@
                             </h3>
                         </div>
                         <div class="panel-body">
-                            <p>There is substantial interest in generating short, readable summaries of news articles. Serval companies providing short human-written summaries are top-rated among readers. But most existing companies only provide services
-                                in English or Hindi so far. While large scale datasets are available for a number of languages like English, Chinese, French, German, Spanish, Russian, and Turkish<sup>[1,2,3]</sup>, no such datasets exist for any Indian
-                                languages
-                                <sup>[5]</sup>. With this shared task, we aim to bridge that gap for two major languages Hindi and Gujarati, having over 350 million and over 50 million speakers, respectively.</p>
+                            <p>
 
-                            <ol>
-                                <li>Nallapati, Ramesh, et al. "Abstractive Text Summarization using Sequence-to-sequence RNNs and Beyond." Proceedings of The 20th SIGNLL Conference on Computational Natural Language Learning. 2016.
-                                </li>
-                                <li>Hu, Baotian, Qingcai Chen, and Fangze Zhu. "LCSTS: A Large Scale Chinese Short Text Summarization Dataset." Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing. 2015.
-                                </li>
-                                <li>Scialom, Thomas, et al. "MLSUM: The Multilingual Summarization Corpus." Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP). 2020.
-                                </li>
-                                <li>Lin, Chin-Yew. "Rouge: A package for automatic evaluation of summaries." Text summarization branches out. 2004.
-                                </li>
-                                <li>Sinha, Shagun, and Girish Nath Jha. "An Overview of Indian Language Datasets used for Text Summarization." arXiv preprint arXiv:2203.16127 (2022).
-                                </li>
-                                <li>https://economictimes.indiatimes.com/tech/funding/inshorts-raises-60-million-from-vy-capit al-existing-investors/articleshow/84437931.cms
-                                </li>
+                                Automatic text summarization for Indian languages has received surprisingly little attention from the NLP research community. While large scale datasets exist for a number of languages like English, Chinese, French, German, Spanish, etc. no such datasets exist for any Indian languages. Most existing datasets are either not public, or are too small to be useful. Through this shared task we aim to bridge the existing gap by creating reusable corpora for Indian Language Summarization. In the first edition we cover two major indian languages Hindi and Gujarati, which have over 350 million and over 50 million speakers respectively. Apart from this we also include Indian English which, at times, can be substantially different from English spoken in other countries and is a widely regonized dialect.
+
+                                <br><br>
+                                The dataset for this task is built using articles and headline pairs from several leading newspapers of the country.
+
+
+                                <br><br>
+                                We provide ~10,000 news articles for each language. The task is to generate a meaningful fixed length summary, either extractive or abstractive, for each article.
+
+
+                        </div>
+                        <div class="panel-heading" role="tab" id="tab_148">
+                            <h3 class="panel-title" style="color:#078186; font-size: 25px;">
+
+                                <b>Guidelines:</b>
+                            </h3>
+                        </div>
+
+                            <br>
+                            <ol  style="font-size: 20px;">
+
+                                <li>Each team can have at most 4 participants</li>
+                                <li>A team can submit up to 3 different runs for each task and can submit only one working note </li>
+                                <li> Each team is required to submit a detailed description of their algorithm(s) </li>
+                                <li> Participants are allowed to use any external publicly available pretrained models.
                             </ol>
 
 
 
-                        </div>
+
                     </div>
                 </div>
 
