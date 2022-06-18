@@ -16,7 +16,7 @@
     <style>
         /* Remove the navbar's default margin-bottom and rounded borders */
         /* Add a gray background color and some padding to the footer */
-
+        
         footer {
             background-color: #f2f2f2;
             padding: 25px;
@@ -24,38 +24,38 @@
             bottom: 0;
             width: 100%;
         }
-
+        
         p {
             font-size: 20px;
         }
-
+        
         .nav a.active {
             background-color: #078186;
             color: white;
         }
-
+        
         .nav a {
             color: black;
             font-size: 18px;
         }
-
+        
         .nav a:hover {
             color: #078186;
         }
-
+        
         .nav-test {
             background-color: #f2f2f2;
             padding: 20px
         }
-
+        
         .panel-group {
             padding: 5px
         }
-
+        
         .jumbotron {
             position: relative;
         }
-
+        
         #logo {
             position: absolute;
             top: 1px;
@@ -94,8 +94,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="registration.html">Registration</a>
                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="submission.html">Submission</a>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="submission.html" style="pointer-events: none">Submission</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="important_dates.html">Important dates</a>
@@ -124,14 +124,15 @@
                         <div class="panel-body">
                             <p>
 
-                                Automatic text summarization for Indian languages has received surprisingly little attention from the NLP research community. While large scale datasets exist for a number of languages like English, Chinese, French, German, Spanish, etc. no such datasets exist for any Indian languages. Most existing datasets are either not public, or are too small to be useful. Through this shared task we aim to bridge the existing gap by creating reusable corpora for Indian Language Summarization. In the first edition we cover two major indian languages Hindi and Gujarati, which have over 350 million and over 50 million speakers respectively. Apart from this we also include Indian English which, at times, can be substantially different from English spoken in other countries and is a widely regonized dialect.
+                                Automatic text summarization for Indian languages has received surprisingly little attention from the NLP research community. While large scale datasets exist for a number of languages like English, Chinese, French, German, Spanish, etc. no such datasets
+                                exist for any Indian languages. Most existing datasets are either not public, or are too small to be useful. Through this shared task we aim to bridge the existing gap by creating reusable corpora for Indian Language Summarization.
+                                In the first edition we cover two major indian languages Hindi and Gujarati, which have over 350 million and over 50 million speakers respectively. Apart from this we also include Indian English which, at times, can be
+                                substantially different from English spoken in other countries and is a widely regonized dialect.
 
-                                <br><br>
-                                The dataset for this task is built using articles and headline pairs from several leading newspapers of the country.
+                                <br><br> The dataset for this task is built using articles and headline pairs from several leading newspapers of the country.
 
 
-                                <br><br>
-                                We provide ~10,000 news articles for each language. The task is to generate a meaningful fixed length summary, either extractive or abstractive, for each article.
+                                <br><br> We provide ~10,000 news articles for each language. The task is to generate a meaningful fixed length summary, either extractive or abstractive, for each article.
 
 
                         </div>
@@ -142,14 +143,14 @@
                             </h3>
                         </div>
 
-                            <br>
-                            <ol  style="font-size: 20px;">
+                        <br>
+                        <ol style="font-size: 20px;">
 
-                                <li>Each team can have at most 4 participants</li>
-                                <li>A team can submit up to 3 different runs for each task and can submit only one working note </li>
-                                <li> Each team is required to submit a detailed description of their algorithm(s) </li>
-                                <li> Participants are allowed to use any external publicly available pretrained models.
-                            </ol>
+                            <li>Each team can have at most 4 participants</li>
+                            <li>A team can submit up to 3 different runs for each task and can submit only one working note </li>
+                            <li> Each team is required to submit a detailed description of their algorithm(s) </li>
+                            <li> Participants are allowed to use any external publicly available pretrained models.
+                        </ol>
 
 
 
@@ -166,7 +167,11 @@
     <footer class="sticky-footer">
         <div class="container my-auto">
             <div class="copyright text-center my-auto">
-                <span>Copyright © ILSUM 2022</span>
+                <span>For any queries write to us at <b><a href = "mailto: ilsum@googlegroups.com"> ilsum@googlegroups.com </a></b>
+                    <br> Subscribe to our <b><a href = "https://groups.google.com/g/ilsum"> mailing list </a></b> for the latest announcements and discussions.</span>
+            </div>
+            <div class="copyright text-center my-auto">
+                <span><h4>Copyright © ILSUM 2022</h4></span>
             </div>
         </div>
     </footer>
