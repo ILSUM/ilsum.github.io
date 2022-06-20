@@ -5,7 +5,6 @@
     <title>ILSUM2022</title>
     <meta charset="utf-8">
 
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" sizes="16x40" href="ILSUM_LOGO.png">
 
@@ -16,7 +15,7 @@
     <style>
         /* Remove the navbar's default margin-bottom and rounded borders */
         /* Add a gray background color and some padding to the footer */
-        
+
         footer {
             background-color: #f2f2f2;
             padding: 25px;
@@ -24,43 +23,52 @@
             bottom: 0;
             width: 100%;
         }
-        
+
         p {
             font-size: 20px;
         }
-        
+
         .nav a.active {
             background-color: #078186;
             color: white;
         }
-        
+
         .nav a {
             color: black;
             font-size: 18px;
         }
-        
+
         .nav a:hover {
             color: #078186;
         }
-        
+
         .nav-test {
             background-color: #f2f2f2;
             padding: 20px
         }
-        
+
         .panel-group {
             padding: 5px
         }
-        
+
         .jumbotron {
             position: relative;
         }
-        
+
         #logo {
             position: absolute;
             top: 1px;
             left: 1px;
         }
+
+        ull li::before {
+          content: "\21DB";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+          color: #078186; /* Change the color */
+          font-weight: bold; /* If you want it to be bold */
+          display: inline-block; /* Needed to add space between the bullet and the text */
+          width: 2em; /* Also needed for space (tweak if needed) */
+        }
+
     </style>
 </head>
 
@@ -121,9 +129,9 @@
 
                         <div class="panel-body">
                             <h4 class="panel-title" style="color:#000000; font-size: 20px;">
-                                <ul>
-                                    <li>Task Announced</li>
-                                </ul>
+                                <ull style="list-style: none;">
+                                    <li><b>Shared task on Indian Language Summarization is announced (8th June 2021)</b></li>
+                                </ull>
 
                             </h4>
                         </div>
