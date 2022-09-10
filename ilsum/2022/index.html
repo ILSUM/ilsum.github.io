@@ -16,7 +16,7 @@
     <style>
         /* Remove the navbar's default margin-bottom and rounded borders */
         /* Add a gray background color and some padding to the footer */
-
+        
         footer {
             background-color: #f2f2f2;
             padding: 25px;
@@ -24,38 +24,38 @@
             bottom: 0;
             width: 100%;
         }
-
+        
         p {
             font-size: 20px;
         }
-
+        
         .nav a.active {
             background-color: #078186;
             color: white;
         }
-
+        
         .nav a {
             color: black;
             font-size: 18px;
         }
-
+        
         .nav a:hover {
             color: #078186;
         }
-
+        
         .nav-test {
             background-color: #f2f2f2;
             padding: 20px
         }
-
+        
         .panel-group {
             padding: 5px
         }
-
+        
         .jumbotron {
             position: relative;
         }
-
+        
         #logo {
             position: absolute;
             top: 1px;
@@ -95,7 +95,7 @@
                         <a class="nav-link" href="registration.html">Registration</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="submission.html" style="pointer-events: none">Submission</a>
+                        <a class="nav-link" href="https://hasocfire.github.io/submission" target="_blank" rel="noopener noreferrer" style="pointer-events: none">Submission</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="important_dates.html">Important dates</a>
@@ -126,21 +126,24 @@
 
                                 Automatic text summarization for Indian languages has received surprisingly little attention from the NLP research community. While large scale datasets exist for a number of languages like English, Chinese, French, German, Spanish, etc. no such datasets
                                 exist for any Indian languages. Most existing datasets are either not public, or are too small to be useful. Through this shared task we aim to bridge the existing gap by creating reusable corpora for Indian Language Summarization.
-                                In the first edition we cover two major indian languages Hindi and Gujarati, which have over 350 million and over 50 million speakers respectively. Apart from this we also include Indian English, a widely regonized dialect which can be substantially different from English spoken elsewhere.
+                                In the first edition we cover two major indian languages Hindi and Gujarati, which have over 350 million and over 50 million speakers respectively. Apart from this we also include Indian English, a widely regonized dialect
+                                which can be substantially different from English spoken elsewhere.
 
-                                <br><br> The dataset for this task is built using articles and headline pairs from several leading newspapers of the country. We provide ~10,000 news articles for each language. The task is to generate a meaningful fixed length summary, either extractive or abstractive, for each article. While several previous works in other languages use news artciles - headlines pair, the current dataset poses a unique challenge of code-mixing and script mixing. It is very common for news articles to borrow phrases from english, even if the article itself is written in an Indian Language.
+                                <br><br> The dataset for this task is built using articles and headline pairs from several leading newspapers of the country. We provide ~10,000 news articles for each language. The task is to generate a meaningful fixed
+                                length summary, either extractive or abstractive, for each article. While several previous works in other languages use news artciles - headlines pair, the current dataset poses a unique challenge of code-mixing and script
+                                mixing. It is very common for news articles to borrow phrases from english, even if the article itself is written in an Indian Language.
 
                                 <br><br> Examples like these are a common occurence both in the headlines as well as in the articles.
 
                                 <ul>
                                     <li>
-                                       <p> "IND vs SA, 5મી T20 તસવીરોમાં: વરસાદે વિલન બની મજા બગાડી" (India vs SA, 5th T20 in pictures: rain spoils the match) </p>
+                                        <p> "IND vs SA, 5મી T20 તસવીરોમાં: વરસાદે વિલન બની મજા બગાડી" (India vs SA, 5th T20 in pictures: rain spoils the match) </p>
                                     </li>
 
                                     <li>
                                         <p> "LIC के IPO में पैसा लगाने वालों का टूटा दिल, आई एक और नुकसानदेह खबर" (Investors of LIC IPO left broken hearted, yet another bad news). </p>
                                     </li>
-                                <br><br>
+                                    <br><br>
 
 
                         </div>
