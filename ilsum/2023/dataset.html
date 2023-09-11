@@ -114,13 +114,29 @@
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="tab_148">
                             <h3 class="panel-title" style="color:#078186; font-size: 25px;">
-
                                 <b>Dataset</b>
                             </h3>
                         </div>
-                        
+                        <br>
                         <div class="panel-body">
                             
+                       <div class="panel-heading" role="tab" id="tab_149">
+
+                        <h4 class="panel-title" style="color:#078186; font-size: 20px;">
+
+                            <b>Task 1</b>
+                        </h4>
+                        <br>
+                        A new version of training data for Task 1 has now been released. Version 2 has the following changes:
+                        <ol>
+                            <li> The english dataset includes abstractive summaries for a part of the training set </li>
+                            <li> Includes ILSUM 2022 dataset (train, val and test) </li>
+                            <li> Removed certain entries with missing article or summary </li>
+                            <li> The ids now reflect year and category (e.g. 2023_train_1) </li>
+                            <li> The new dataset is a superset of V1, and excludes the incorrect entries mentioned in point 2 </li>
+                        </ol>
+                         <br>
+                       
                             <div class="table-responsive">    
                                 <table class="table table-hover table-bordered">
                                     <thead class="thead-dark">
@@ -138,7 +154,7 @@
                                                 Hindi Dataset
                                             </td>
                                             <td>
-                                                <a href="../../data/2023/HindiNews_train.zip">Download</a>
+                                                <a href="../../data/2023/HindiNews_train_v2.zip">Download (Version 2)</a>
                                             </td>
                                             <td>
                                                 <a href="">Coming Soon</a>
@@ -153,7 +169,7 @@
                                                 Gujarati Dataset
                                             </td>
                                             <td>
-                                                <a href="../../data/2023/GujaratiNews_train.zip">Download</a>
+                                                <a href="../../data/2023/GujaratiNews_train_v2.zip">Download (Version 2)</a>
                                             </td>
                                             <td>
                                                 <a href="">Coming Soon</a>
@@ -168,7 +184,7 @@
                                                 Bengali Dataset
                                             </td>
                                             <td>
-                                                <a href="../../data/2023/BengaliNews_train.zip">Download</a>
+                                                <a href="../../data/2023/BengaliNews_train_v2.zip">Download (Version 2)</a>
                                             </td>
                                             <td>
                                                 <a href="">Coming Soon</a>
@@ -183,7 +199,7 @@
                                                 English Dataset
                                             </td>
                                             <td>
-                                                <a href="../../data/2023/EnglishNews_train.zip">Download</a>
+                                                <a href="../../data/2023/EnglishNews_train_v2.zip">Download (Version 2)</a>
                                             </td>
                                             <td>
                                                 <a href="">Coming Soon</a>
@@ -194,17 +210,67 @@
                                         </tr>
                                     </tbody>
                                 </table>
+                            </div>
+
+                       <div class="panel-heading" role="tab" id="tab_148">
+
+                        <h4 class="panel-title" style="color:#078186; font-size: 20px;">
+
+                            <b>Task 2</b>
+                        </h4>
+                            <br>
+                            The dataset contains the following 
+                            <ol>
+                            <li> Original news articles</li>
+                            <li> Factually correct abstractive summary </li> 
+                            <li> Factually incorrect abstractive summary (for a subset of the data)</li>
+                            <li> Type of incorrectness</li>
+                        </ol>
+                        <div>An incorrect summary can have multiple types associated with it, but only one label is provided in the training data. 
+                            The test data will have all the applicable labels.
+
+                        </div>
+                            <br>
+                            <div class="table-responsive">    
+                                <table class="table table-hover table-bordered">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th>Category</th>
+                                            <th>Train Dataset</th>
+                                            <th>Validation Dataset</th>
+                                            <th>Test Dataset</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr>
+                                            <td>
+                                                Task 2 Dataset
+                                            </td>
+                                            <td>
+                                                <a href="../../data/2023/Task2_train.zip">Download</a>
+                                            </td>
+                                            <td>
+                                                <a href="">Coming Soon</a>
+                                            </td>
+                                            <td>
+                                                <a href="">Coming Soon</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        
                                 <div class="text-danger">Note: All the datasets are password protected, please register to get access to the data.
                                 </div>
-                                </div>
-                            <h4><a href="https://ilsum.github.io/ilsum/2022/dataset.html">Please click here for ILSUM 2022 Datasets</a></h4>
+                            <!--<h4><a href="https://ilsum.github.io/ilsum/2022/dataset.html">Please click here for ILSUM 2022 Datasets</a></h4>-->
                         </div>
                         
                     </div>
 
                 </div>
             </div>
-            <div class="col-sm-11">
+        </div>
 
                 <div class="panel-group" role="tablist" aria-multiselectable="true">
                     <div class="panel panel-default">

@@ -73,6 +73,15 @@
             width: 2em;
             /* Also needed for space (tweak if needed) */
         }
+        @keyframes blink {
+    0%, 100% { color: blue; }
+    50% { color: red; }
+    25% { color: green;}
+  }
+
+  .blinking-text {
+    animation: blink 1s infinite;
+  }        
     </style>
 </head>
 
@@ -134,7 +143,11 @@
                         <div class="panel-body">
                             <h4 class="panel-title" style="color:#000000; font-size: 20px;">
                                 <ull style="list-style: none;">
-                                    <li><b>Coming Soon</b></li>
+                                    <li>Training Data (Version 1) for Task 1 released on 7th August</li>
+                                    <br>
+                                    <li>Training Data (Version 2) for Task released on 12th September - <b><span class="blinking-text">NEW!</span></b></li>
+                                    <br>
+                                    <li>Training Data for Task 2 released on 12th September - <b><span class="blinking-text">NEW!</span></b></li>
                                 </ull>
 
                             </h4>
