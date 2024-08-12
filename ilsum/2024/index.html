@@ -142,19 +142,17 @@
                                 small to be useful.
                                 Through this shared task we aim to bridge the existing gap by creating reusable corpora
                                 for Indian Language Summarization.
-                                In the second edition we cover three major indian languages Hindi, Gujarati and Bengali
-                                which have over 350 million, 50 million and 200 million speakers respectively. Apart
-                                from this we also include Indian English, a widely regonized dialect
-                                which can be substantially different from English spoken elsewhere.
+                                The third edition of ILSUM introduces three dravidian langauges Kannada, Tamil and Telugu apart from 
+                                Hindi, Gujarati, Bengali and Indian English from the last edition.
                             </p>
                             <p>
-                                The second edition of ILSUM consist two tasks,<br>
+                                The third edition of ILSUM consist two tasks,<br>
                             </p><ul>
                                 <li>
                                     <p>Task 1: Language Summarization For Indian Languages</p>
                                 </li>
                                 <li>
-                                    <p>Task 2: Detecting Factual Incorrectness in Machine Generated Summaries</p>
+                                    <p>Task 2: Detecting Factual Incorrectness in Machine Generated Cross Lingual Summaries</p>
                                 </li>
                             </ul>
                             <p></p>
@@ -188,8 +186,8 @@
                         <br>
                         <div class="panel-body">
                             <p>The dataset for this task is built using articles and headline pairs from several leading
-                                newspapers of the country. We provide ~15,000 news articles for each language. The task
-                                is to generate a meaningful fixed
+                                newspapers of the country. We provide over 15,000 news articles for each language (except Tamil). 
+                                The task is to generate a meaningful fixed
                                 length summary, either extractive or abstractive, for each article. While several
                                 previous works in other languages use news artciles - headlines pair, the current
                                 dataset poses a unique challenge of code-mixing and script
@@ -209,19 +207,27 @@
                                     <p> "LIC के IPO में पैसा लगाने वालों का टूटा दिल, आई एक और नुकसानदेह खबर" (Investors
                                         of LIC IPO left broken hearted, yet another bad news). </p>
                                 </li>
+                                <li>
+                                    <p> "ಹುಬ್ಬಳ್ಳಿಯಿಂದ ದೇಶದ ಈ ನಗರಕ್ಕೆ ವಿಶೇಷ ರೈಲು ಆರಂಭ" (Hubballi 
+                                    Special Trains: Special train starts from Hubballi to this city of the country)</p>
+                                </li>
+
                         </ul></div>
                         <div class="panel-heading" role="tab" id="tab_148">
                             <h3 class="panel-title" style="color:#078186; font-size: 25px;">
                                 
-                                <b>Task 2: Detecting Factual Incorrectness in Machine Generated Summaries   <span class="blinking-text">NEW!</span></b>
+                                <b>Task 2: Detecting Factual Incorrectness in Machine Generated Cross Lingual Summaries   </b>
                             </h3>
                         </div>
 
                         <div class="panel-body">
-                            <p>The task is centered around identifying factual errors in machine-generated summaries.
-                                Participants will be provided with an article and its corresponding machine-generated
-                                summary. The objective is to categorize each datapoint into different categories based on the
-                                presence of factual incorrectness in the summaries. We cover four types of factual error for this edition.
+                            <p>The task is a a continuation from the previous edition. Given a machine generated summary
+                            participants are asked to identify factual errors. We introduce a cross lingual setup this year, where
+                            the source document is in English, but the target summary is in Gujarati or Hindi. For the training set we provide 
+                            the source document in english and summaries in english, hindi and gujarati. For the test set only
+                            the source english document and a summary in hindi and gujarati will be provided.
+                            The objective is to categorize each datapoint into different categories based on the
+                            presence of factual incorrectness in the summaries. We cover four types of factual error for this edition.
                             </p>
                             <p>Possible types of factual incorrectness:</p>
                             <ul>
@@ -310,14 +316,20 @@
                                                 </div>
                                                 <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                                                     <div class="card-body">
-                                                        <p>Thirteen individuals, including five children, were admitted
+                                                        <p> <b>Gujarati Summary</b>: ગાંધીનગરમાં કલોલ નગરપાલિકામાં કોલેરાની શંકાસ્પદ મહામારીને કારણે 
+                                                            પાંચ બાળકો સહિત તેર જણને આરોગ્ય સુવિધાઓમાં દાખલ કરવામાં આવ્યા હતા. 
+                                                            બે કેસની પુષ્ટિ થતાં આ ઉતરાણ વિસ્તારથી બે કિલોમીટર વ્યાસ ધરાવતો વિસ્તાર 
+                                                           'કોલેરા પીડિત' જાહેર કરવામાં આવ્યો હતો. રાજ્યના આરોગ્ય મંત્રી રુશિકેશ પટેલે કેન્દ્રીય ગૃહ 
+                                                            મંત્રી અમિત શાહને આ પરિસ્થિતિની જાણકારી આપી હતી.</p>            
+                                                        <p> <b>English Summary</b>: Thirteen individuals, including five children, were admitted
                                                             to health facilities in Gandhinagar due to a suspected
                                                             cholera outbreak in the Kalol municipality. Two cases were
                                                             confirmed, prompting a two-kilometer radius of the outbreak
                                                             area to be declared 'cholera-affected.' The State Health
                                                             Minister, Rushikesh Patel, communicated the situation to
                                                             Union Home Minister Amit Shah.</p>
-                                                        <p>(Explanation: This is an accurate summarization of the facts
+                                               
+                                                        <p>(<b>Explanation</b>: This is an accurate summarization of the facts
                                                             presented in the original text.)</p>
                                                     </div>
 
@@ -340,7 +352,21 @@
                                             </div>
                                             <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
                                                 <div class="card-body">
-                                                    <p>Pro-Establishment Summary: In response to the confirmation of two cholera
+                                                    <p><b>Pro-Establishment Summary Gujarati</b>: કલોલ નગર પાલિકા, ગાંધીનગર માં કોલેરાના 
+                                                        બે કેસોની પુષ્ટિના પ્રતિસાદમાં સ્થાનિક સત્તાવાળાઓએ ઝડપી કાર્યવાહી કરી, જેમાં ગાંધીનગર કલેક્ટર 
+                                                        હિતેશ કોયાએ તાત્કાલિક પ્રકટ કર્યું કે આઉટબ્રેક આસપાસના બે કિલોમીટર વિસ્તારને 'કોલેરા પ્રભાવિત' 
+                                                        તરીકે જાહેર કરાયો છે. આ ઉપરાંત, રાજ્યના આરોગ્ય મંત્રી ઋષિકેશ પટેલે કેન્દ્રિય ગૃહ મંત્રી અમિત શાહને 
+                                                        આ પરિસ્થિતિની અસરકારક રીતે માહિતી આપી. સરકારે આપેલી કાર્યક્ષમ પ્રતિસાદ અને પારદર્શક સંચાર 
+                                                        તેમની લોક આરોગ્ય અને સુરક્ષાપ્રતિ પ્રતિબદ્ધતાને દર્શાવે છે
+                                                    </p><p>
+                                                        <b>Anti-Establishment Summary Gujarati</b>: કોલેરાના અગાઉના પ્રકોપો અને કલોલ નગરપાલિકામાં 
+                                                        પાણીની પાઇપલાઇનની સ્થિતિ વિશે સતત ચેતવણીઓ છતાં, સ્થાનિક સત્તાવાળાઓ ફરીથી પ્રકોપ થતો અટકાવવા 
+                                                        નિષ્ફળ ગયા, જેના પરિણામે 13 લોકો, જેમાં પાંચ બાળકોનો સમાવેશ થાય છે, ગાંધીનગરની આરોગ્ય સુવિધામાં દાખલ 
+                                                        કરવામાં આવ્યા. રાજ્યના આરોગ્ય મંત્રી રુશિકેશ પટેલે કેન્દ્રીય ગૃહ મંત્રી અમિત શાહને માહિતી આપી હોવા છતાં, 
+                                                        પ્રતિક્રિયા બે કેસની પુષ્ટિ થયા પછી આવી. જાહેર આરોગ્ય જોખમોને અસરકારક રીતે ઉકેલવામાં આ વારંવારની 
+                                                        નિષ્ફળતા સ્થાપનાની પહેલ અને પૂર્વદૃષ્ટિની કમીને રેખાંકિત કરે છે. 
+                                                    </p>
+                                                    <p><b>Pro-Establishment Summary English</b>: In response to the confirmation of two cholera
                                                         cases in Kalol municipality, Gandhinagar, swift action was taken by the
                                                         local authorities, with Hitesh Koya, the Gandhinagar Collector, promptly
                                                         declaring a two-kilometer radius around the outbreak as
@@ -349,7 +375,7 @@
                                                         The efficient response and transparent communication by the government
                                                         demonstrates their commitment to public health and safety.
                                                     </p><p>
-                                                        Anti-Establishment Summary: Despite previous cholera outbreaks and
+                                                        <b>Anti-Establishment Summary English</b>: Despite previous cholera outbreaks and
                                                         consistent warnings about the condition of water pipelines in Kalol
                                                         municipality, the local authorities failed to prevent another outbreak,
                                                         leading to 13 people, including five children, being admitted to health
@@ -359,7 +385,8 @@
                                                         health risks effectively underlines a lack of initiative and foresight
                                                         from the establishment.
                                                     </p>
-                                                    <p>(Explanation: This summary misrepresents the information by
+
+                                                    <p>(<b>Explanation</b>: This summary misrepresents the information by
                                                         mischaracterizing the timing and the reaction of the authorities. 
                                                         Summaries with misrepresentation are usually biased.)
                                                     </p></div>
@@ -383,12 +410,13 @@
                                             </div>
                                             <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
                                                 <div class="card-body">
-                                                    <p>A cholera outbreak has affected thousands in the Kalol municipality,
+                                                    <p> <b>Hindi Summary</b>: गांधीनगर के कलोल नगर पालिका क्षेत्र में हजारों लोगों को हैजा प्रभावित कर चुका है। पूरे क्षेत्र को 'हैजा प्रभावित' क्षेत्र घोषित कर दिया गया है। 100 से अधिक मामलों की पुष्टि हो चुकी है, जिनमें कई बच्चे भी शामिल हैं।</p>
+                                                    <p> <b>English Summary</b>: A cholera outbreak has affected thousands in the Kalol municipality,
                                                         Gandhinagar. The entire region has been declared a 'cholera-affected'
                                                         area. Over 100 cases have been confirmed, with many children being
                                                         affected.
                                                     </p>
-                                                    <p>(Explanation: The summary inaccurately increases the number of affected
+                                                    <p>(<b>Explanation</b>: The summary inaccurately increases the number of affected
                                                         individuals and the geographical scope of the cholera outbreak.)
                                                     </p>
                                                 </div>
@@ -412,13 +440,18 @@
                                             </div>
                                             <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
                                                 <div class="card-body">
-                                                    <p>The World Health Organization (WHO) confirmed a cholera outbreak in
+
+                                                    <p><b>Hindi Summary</b>:विश्व स्वास्थ्य संगठन (WHO) ने गांधीनगर के कलोल नगरपालिका में हैजा के प्रकोप की पुष्टि की है, 
+                                                    जिसमें 13 लोगों को स्वास्थ्य सुविधाओं में भर्ती कराया गया है। WHO ने प्रकोप क्षेत्र के चारों ओर दो किलोमीटर के दायरे को 'हैजा प्रभावित' 
+                                                    घोषित किया है। भारत के प्रधानमंत्री को स्थिति के बारे में जानकारी दी गई है।</p>
+                                                    
+                                                    <p><b>English Summary</b>: The World Health Organization (WHO) confirmed a cholera outbreak in
                                                         Gandhinagar's Kalol municipality, with 13 people admitted to healthcare
                                                         facilities. The WHO has declared a two-kilometer radius around the
                                                         outbreak area as 'cholera-affected.' The Prime Minister of India has
                                                         been briefed about the situation.
                                                     </p>
-                                                    <p>(Explanation: The summary falsely attributes the confirmation of the
+                                                    <p>(<b>Explanation</b>: The summary falsely attributes the confirmation of the
                                                         outbreak and the response to the WHO and the Prime Minister of India.)
                                                     </p>
                                                 </div>
@@ -475,14 +508,17 @@
                                             </div>
                                             <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix" data-parent="#accordion">
                                                 <div class="card-body">
-                                                    <p><u>A Summary with Fabricated Information:</u></p>
+                                                    <p><b>Hindi Summary</b>: गांधीनगर में हैजा का प्रकोप एक जैव-इंजीनियरिंग प्रयोगशाला से निकली एक आनुवंशिक रूप से संशोधित 
+                                                    स्ट्रेन के कारण हुआ है। इससे 13 लोगों को अस्पताल में भर्ती कराया गया है, जिनमें पांच बच्चे शामिल हैं। सरकार ने नगरपालिका के दो 
+                                                    किलोमीटर के दायरे को 'हैजा प्रभावित' घोषित किया है। </p>
+                                                    <p><b>English Summary</b>
                                             <p>A cholera outbreak in Gandhinagar has resulted from a genetically
                                                 modified strain that escaped a bioengineering lab. This has led to 13
                                                 hospitalizations, with five children affected. The government has
                                                 declared a two-kilometer radius of the municipality as
                                                 'cholera-affected.'
                                             </p>
-                                            <p>(Explanation: The outbreak being linked to a genetically modified strain
+                                            <p>(<b>Explanation</b>: The outbreak being linked to a genetically modified strain
                                                 and an escape from a lab is entirely fabricated and not supported by the
                                                 original text.)
                                             </p>

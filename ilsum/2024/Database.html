@@ -121,26 +121,19 @@
                         </div>
                         <br>
                         <div class="panel-body">
-                          <p> In the second edition we offered tasks in Hindi, Gujarati, Bengali and Indian English. Each
-                                language had over 15,000 document-summary pairs extracted from leading newspapers. This
-                                year we aim to expand the existing dataset, add a dravidian language. We also aim to offer
-                                cross lingual summarization dataset across some of the pairs of language. </p>  
                        <div class="panel-heading" role="tab" id="tab_149">
 
                         <h4 class="panel-title" style="color:#078186; font-size: 20px;">
 
-                            <b>Task 1</b>
+                        <b>Task 1</b>
                         </h4>
                         <br>
-                        A new version of training data for Task 1 has now been released. Version 2 has the following changes:
-                        <ol>
-                            <li> The english dataset includes abstractive summaries for a part of the training set </li>
-                            <li> Includes ILSUM 2022 dataset (train, val and test) </li>
-                            <li> Removed certain entries with missing article or summary </li>
-                            <li> The ids now reflect year and category (e.g. 2023_train_1) </li>
-                            <li> The new dataset is a superset of V1, and excludes the incorrect entries mentioned in point 2 </li>
-                        </ol>
-                         <br>
+                          <p> In this edition the text summarization task is offered in three Dravidian languages 
+                            Kannada, Tamil and Telugu apart from the languages included in previous editions. Each
+                            language, except Kannada has over 15,000 document-summary pairs extracted from leading newspapers. Kannada has ~6000 pairs. </p>  
+                        <br>
+
+
                        
                             <div class="table-responsive">    
                                 <table class="table table-hover table-bordered">
@@ -154,8 +147,8 @@
                                     <tbody>
 
                                         <tr>
-                                            <td>
-                                                Hindi Dataset
+                                            <td><p>
+                                                Hindi </p>
                                             </td>
                                             <td>
                                                 <p> Coming Soon </p>
@@ -169,8 +162,8 @@
 
                                         </tr>
                                         <tr>
-                                            <td>
-                                                Gujarati Dataset
+                                            <td><p>
+                                                Gujarati </p>
                                             </td>
                                             <td>
                                                 <p> Coming Soon </p>
@@ -183,8 +176,8 @@
 
                                         </tr>
                                         <tr>
-                                            <td>
-                                                Bengali Dataset
+                                            <td><p>
+                                                Bengali </p>
                                             </td>
                                             <td>
                                                 <p> Coming Soon </p>
@@ -197,8 +190,50 @@
 
                                         </tr>
                                         <tr>
+                                            <td><p>
+                                                Tamil </p>
+                                            </td>
                                             <td>
-                                                English Dataset
+                                                <p> Coming Soon </p>
+<!--                                                 <a href="https://ilsum.github.io/data/2023/BengaliNews_train_v2.zip">Download (Version 2)</a> -->
+                                            </td>
+                                            <td>
+                                                <p> Coming Soon </p>
+<!--                                                 <a href="https://ilsum.github.io/data/2023/BengaliNews_test.zip">Download</a> -->
+                                            </td>
+
+                                        </tr>    
+                                         <tr>
+                                            <td><p>
+                                                Telugu </p>
+                                            </td>
+                                            <td>
+                                                <p> Coming Soon </p>
+<!--                                                 <a href="https://ilsum.github.io/data/2023/BengaliNews_train_v2.zip">Download (Version 2)</a> -->
+                                            </td>
+                                            <td>
+                                                <p> Coming Soon </p>
+<!--                                                 <a href="https://ilsum.github.io/data/2023/BengaliNews_test.zip">Download</a> -->
+                                            </td>
+
+                                        </tr>                                                                           
+                                        <tr>
+                                            <td><p>
+                                                Kannada </p>
+                                            </td>
+                                            <td>
+                                                <p> Coming Soon </p>
+<!--                                                 <a href="https://ilsum.github.io/data/2023/BengaliNews_train_v2.zip">Download (Version 2)</a> -->
+                                            </td>
+                                            <td>
+                                                <p> Coming Soon </p>
+<!--                                                 <a href="https://ilsum.github.io/data/2023/BengaliNews_test.zip">Download</a> -->
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td><p>
+                                                English</p>
                                             </td>
                                             <td>
                                                 <p> Coming Soon </p>
@@ -218,16 +253,19 @@
 
                             <b>Task 2</b>
                         </h4>
+                         <p>
                             <br>
                             The dataset contains the following 
                             <ol>
-                            <li> Original news articles</li>
-                            <li> Factually correct abstractive summary </li> 
-                            <li> Factually incorrect abstractive summary (for a subset of the data)</li>
-                            <li> Type of incorrectness</li>
+                            <li> <p>Original news articles</p></li>
+                            <li> <p>Factually correct abstractive summary in English, Hindi and Gujarati</p></li> 
+                            <li> <p>Factually incorrect abstractive summary in English, Hindi and Gujarati (for a subset of the data)</p></li>
+                            <li> <p>Type of incorrectness </p></li>
                         </ol>
-                        <div>An incorrect summary can have multiple types associated with it, but only one label is provided in the training data. 
-                            The test data will have all the applicable labels.
+                        </p>
+                        <div>
+                            <p>An incorrect summary can have multiple types associated with it, but only one label is provided in the training data. 
+                            The test data will have all the applicable labels.</p>
 
                         </div>
                             <br>
@@ -245,7 +283,9 @@
 
                                         <tr>
                                             <td>
-                                                Task 2 Dataset
+                                                <p>
+                                                Task 2 Dataset 
+                                                </p>
                                             </td>
                                             <td>
                                                 <p> Coming Soon </p>
@@ -282,16 +322,21 @@
                         </div>
 
                         <div class="panel-body">
-                            <p> The Recall-Oriented Understudy for Gisting Evaluation (ROUGE) metrics [4]
-will be utilized as the standard method for evaluating automatic summarization in the live
-submission system. Additionally, once all submissions have been received, the BERT score[7]
-will be used offline to gain insight into abstractive summarization methods. We also plan to do
-manual evaluation on part of the dataset. </p>
+                        <h4 class="panel-title" style="color:#078186; font-size: 20px;">
+
+                            <b>Task 1</b>
+                        </h4>
+
+                            <p> For Task 1 The standard ROUGE metrics will be utilized as the standard method for evaluating automatic summarization in the live submission system. Additionally, once all submissions have been received, the BERT score will be used offline to gain insight into abstractive summarization methods. BERT Score will not be part of the leaderboard scores due to high computation requirements. We also plan to do manual evaluation on part of the dataset.</p>
 
                             <div class="table-responsive">
-                                <p>Standard ROUGE metrics Rouge-1, Rouge-2 and Rouge-4 F-scores and BERT-Score will be used for evaluation for Task 1 and Macro F1 Score will be used for Task 2. </p>
-                                <br> Note: While we will use a max length of 75 words for evaluation, participants are expected to predict an appropriate summary length for each article. Too long or short lengths compared to the groud truth summary can
-                                adverseley effect ROUGE precision or recall respectively.
+                        <h4 class="panel-title" style="color:#078186; font-size: 20px;">
+                            <br>
+                            <b>Task 2</b>
+                        </h4>
+
+                                <p> Macro F1 Score will be used for Task 2. </p>
+                                <br> Note: While we will use a max length of 75 words for evaluation, participants are expected to predict an appropriate summary length for each article. Too long or short lengths compared to the groud truth summary can adverseley effect ROUGE precision or recall respectively.
                             </div>
                         </div>
 
