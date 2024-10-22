@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <!-- saved from url=(0047)https://ilsum.github.io/ilsum/2023/results.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>ILSUM2024</title>
-    
+
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +18,7 @@
     <style>
         /* Remove the navbar's default margin-bottom and rounded borders */
         /* Add a gray background color and some padding to the footer */
-        
+
         footer {
             background-color: #f2f2f2;
             padding: 25px;
@@ -23,38 +26,38 @@
             bottom: 0;
             width: 100%;
         }
-        
+
         p {
             font-size: 20px;
         }
-        
+
         .nav a.active {
             background-color: #078186;
             color: white;
         }
-        
+
         .nav a {
             color: black;
             font-size: 18px;
         }
-        
+
         .nav a:hover {
             color: #078186;
         }
-        
+
         .nav-test {
             background-color: #f2f2f2;
             padding: 20px
         }
-        
+
         .panel-group {
             padding: 5px
         }
-        
+
         .jumbotron {
             position: relative;
         }
-        
+
         #logo {
             position: absolute;
             top: 1px;
@@ -84,7 +87,8 @@
             <div class="col-sm-2 nav-test">
                 <ul class="nav nav-pills nav-stacked ">
                     <li class="nav-item ">
-                        <a class="nav-link" href="index.html">Track Description<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html">Track Description<span
+                                class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link " href="Database.html">Dataset and Evaluation</a>
@@ -104,7 +108,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="Organizer.html">Organizers</a>
                     </li>
-                    
+
                 </ul>
             </div>
             <div class="col-sm-9">
@@ -117,48 +121,101 @@
                                 <b>Results</b>
                             </h3>
                         </div>
-                        
-                        <div class="panel-body">
-                            <h4 style="color: #078186;">Task 1</h4>
-                            <div class="table-responsive">
 
-                                <table class="table table-hover table-bordered">
-                                    <thead class="thead-dark">
-                                        <tr>
-                                            <th></th>
-                                            <th>Hindi</th>
-                                            <th>Gujarati</th>
-                                            <th>Bengali</th>
-                                            <th>English</th>
-                                       </tr>
-                                    </thead>
-                                    <tbody>
-                                        
-                                        <tr>
-                                            <td>ROUGE</td>
-                                            <td><a href="https://ilsum.github.io/ilsum/2023/final_results/ILSUM_2023_Task1_Hi_rouge.xlsx">Download</a></td>
-                                            <td><a href="https://ilsum.github.io/ilsum/2023/final_results/ILSUM_2023_Task1_Gu_rouge.xlsx">Download</a></td>
-                                            <td><a href="https://ilsum.github.io/ilsum/2023/final_results/ILSUM_2023_Task1_Bn_rouge.xlsx">Download</a></td>
-                                            <td><a href="https://ilsum.github.io/ilsum/2023/final_results/ILSUM_2023_Task1_En_rouge.xlsx">Download</a></td>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>BERT Score</td>
-                                            <td><a href="https://ilsum.github.io/ilsum/2023/final_results/ILSUM_2023_Task1_Hi_bert.xlsx">Download</a></td>
-                                            <td><a href="https://ilsum.github.io/ilsum/2023/final_results/ILSUM_2023_Task1_Gu_bert.xlsx">Download</a></td>
-                                            <td><a href="https://ilsum.github.io/ilsum/2023/final_results/ILSUM_2023_Task1_Bn_bert.xlsx">Download</a></td>
-                                            <td><a href="https://ilsum.github.io/ilsum/2023/final_results/ILSUM_2023_Task1_En_bert.xlsx">Download</a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                        <h4 style="color: #078186; padding-left: 1%;">Task 1: Text Summarization For Indian Languages</h4>
+                        <div class="table-responsive; padding-left: 2%">
+                            <table class="table table-hover table-bordered">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>Language</th>
+                                        <th>ROUGE All Runs</th>
+                                        <th>ROUGE Best Run Per Team</th>
+                                        <th>BERTScore All Runs</th>
+                                        <th>BERTScore Best Run Per Team</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Bengali</td>
+                                        <td><a href="./results/task_1_bengali_rouge_all_runs.xlsx">Download</a></td>
+                                        <td><a href="./results/task_1_bengali_rouge_best.xlsx">Download</a></td>
+                                        <td><a href="./results/task_1_bengali_bert_all_runs.xlsx">Download</a></td>
+                                        <td><a href="./results/task_1_bengali_bert_best.xlsx">Download</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>English</td>
+                                        <td><a href="./results/task_1_english_rouge_all_runs.xlsx">Download</a></td>
+                                        <td><a href="./results/task_1_english_rouge_best.xlsx">Download</a></td>
+                                        <td><a href="./results/task_1_english_bert_all_runs.xlsx">Download</a></td>
+                                        <td><a href="./results/task_1_english_bert_best.xlsx">Download</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gujarati</td>
+                                        <td><a href="./results/task_1_gujarati_rouge_all_runs.xlsx">Download</a></td>
+                                        <td><a href="./results/task_1_gujarati_rouge_best.xlsx">Download</a></td>
+                                        <td><a href="./results/task_1_gujarati_bert_all_runs.xlsx">Download</a></td>
+                                        <td><a href="./results/task_1_gujarati_bert_best.xlsx">Download</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hindi</td>
+                                        <td><a href="./results/task_1_hindi_rouge_all_runs.xlsx">Download</a></td>
+                                        <td><a href="./results/task_1_hindi_rouge_best.xlsx">Download</a></td>
+                                        <td><a href="./results/task_1_hindi_bert_all_runs.xlsx">Download</a></td>
+                                        <td><a href="./results/task_1_hindi_bert_best.xlsx">Download</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kannada</td>
+                                        <td><a href="./results/task_1_kannada_rouge_all_runs.xlsx">Download</a></td>
+                                        <td><a href="./results/task_1_kannada_rouge_best.xlsx">Download</a></td>
+                                        <td><a href="./results/task_1_kannada_bert_all_runs.xlsx">Download</a></td>
+                                        <td><a href="./results/task_1_kannada_bert_best.xlsx">Download</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tamil</td>
+                                        <td><a href="./results/task_1_tamil_rouge_all_runs.xlsx">Download</a></td>
+                                        <td><a href="./results/task_1_tamil_rouge_best.xlsx">Download</a></td>
+                                        <td><a href="./results/task_1_tamil_bert_all_runs.xlsx">Download</a></td>
+                                        <td><a href="./results/task_1_tamil_bert_best.xlsx">Download</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Telugu</td>
+                                        <td><a href="./results/task_1_telugu_rouge_all_runs.xlsx">Download</a></td>
+                                        <td><a href="./results/task_1_telugu_rouge_best.xlsx">Download</a></td>
+                                        <td><a href="./results/task_1_telugu_bert_all_runs.xlsx">Download</a></td>
+                                        <td><a href="./results/task_1_telugu_bert_best.xlsx">Download</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-
+                        <h4 style="color: #078186; padding-left: 1%;">Task 2: Detecting Factual Incorrectness in Machine Generated Cross Lingual Summaries</h4>
+                        <div class="table-responsive; padding-left: 1%">
+                            <table class="table table-hover table-bordered">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>Language</th>
+                                        <th>All Runs</th>
+                                        <th>Best Run Per Team</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Gujarati</td>
+                                        <td><a href="task_2_gujarati_all_runs.xlsx">Download</a></td>
+                                        <td><a href="task_2_gujarati_best_run.xlsx">Download</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hindi</td>
+                                        <td><a href="task_2_hindi_all_runs.xlsx">Download</a></td>
+                                        <td><a href="task_2_hindi_best_run.xlsx">Download</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
 
                 </div>
             </div>
-            <div class="col-sm-9">
+            <!-- <div class="col-sm-9">
 
                 <div class="panel-group" role="tablist" aria-multiselectable="true">
                     <div class="panel panel-default">
@@ -172,11 +229,15 @@
                         <div class="panel-body">
                             <div class="table-responsive">
                                 <h3>Two different Rank Lists are provided for Task 1
-                                     </h3>
-                                     <h4><ul>
-                                        <li>ROUGE metrics Rouge-4, Rouge-2 and Rouge-1 F-scores is used for evaluation in the same priority order for first rank list.</li>
-                                        <li>BERTScore F1 Score, Precision and Recall is used for evaluation in the same priority order for second rank list.</li>
-                                     </ul></h4>
+                                </h3>
+                                <h4>
+                                    <ul>
+                                        <li>ROUGE metrics Rouge-4, Rouge-2 and Rouge-1 F-scores is used for evaluation
+                                            in the same priority order for first rank list.</li>
+                                        <li>BERTScore F1 Score, Precision and Recall is used for evaluation in the same
+                                            priority order for second rank list.</li>
+                                    </ul>
+                                </h4>
                                 <h3>Task 2 is evaluated using F1 Score</h3>
                             </div>
                         </div>
@@ -184,46 +245,57 @@
                     </div>
 
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </div>
-    
+
     <br>
     <br>
     <footer class="sticky-footer">
         <div class="container my-auto">
             <div class="copyright text-center my-auto">
-                <h3><span>For any queries write to us at <b><a href="mailto:%20ilsum@googlegroups.com"> ilsum@googlegroups.com </a></b>
-                    <br> Subscribe to our <b><a href="https://groups.google.com/g/ilsum"> mailing list </a></b> for the latest announcements and discussions.</span>
+                <h3><span>For any queries write to us at <b><a href="mailto:%20ilsum@googlegroups.com">
+                                ilsum@googlegroups.com </a></b>
+                        <br> Subscribe to our <b><a href="https://groups.google.com/g/ilsum"> mailing list </a></b> for
+                        the latest announcements and discussions.</span>
                 </h3>
             </div>
             <div class="copyright text-center my-auto">
-                <span><h4>Copyright © ILSUM 2023</h4></span>
+                <span>
+                    <h4>Copyright © ILSUM 2023</h4>
+                </span>
             </div>
         </div>
     </footer>
 
 
 
-</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
-      div.grammarly-desktop-integration {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border: 0;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        -ms-user-select:none;
-        user-select:none;
-      }
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open">
+        <style>
+            div.grammarly-desktop-integration {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                padding: 0;
+                margin: -1px;
+                overflow: hidden;
+                clip: rect(0, 0, 0, 0);
+                white-space: nowrap;
+                border: 0;
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
 
-      div.grammarly-desktop-integration:before {
-        content: attr(data-content);
-      }
-    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;limited&quot;,&quot;isActive&quot;:false,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
+            div.grammarly-desktop-integration:before {
+                content: attr(data-content);
+            }
+        </style>
+        <div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration"
+            data-content="{&quot;mode&quot;:&quot;limited&quot;,&quot;isActive&quot;:false,&quot;isUserDisabled&quot;:false}">
+        </div>
+    </template></grammarly-desktop-integration>
+
+</html>

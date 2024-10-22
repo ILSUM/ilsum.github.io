@@ -1,0 +1,41 @@
+team_name,language,run name,F1-Score
+Team Bug Smashers,gujarati,gujarati_submission.csv,0.18841533841533842
+Team Bug Smashers,hindi,hindi_submission.csv,0.23674758697865114
+TextTitans,gujarati,run1.csv,0.06772908366533865
+TextTitans,gujarati,run4.csv,0.03636363636363636
+TextTitans,gujarati,run3.csv,0.03571428571428571
+TextTitans,gujarati,run5.csv,0.0365296803652968
+TextTitans,gujarati,run2.csv,0.034379671150971604
+TextTitans,hindi,run1.csv,0.06772908366533865
+TextTitans,hindi,run4.csv,0.034379671150971604
+TextTitans,hindi,run3.csv,0.06530612244897958
+TextTitans,hindi,run5.csv,0.03636363636363636
+TextTitans,hindi,run2.csv,0.03571428571428571
+Iem inturns ,gujarati,run1.csv,0.21273412474090825
+Iem inturns ,hindi,run1.csv,0.21320690438337497
+Squad,gujarati,run1.csv,0.2959932658770165
+Squad,hindi,run1.csv,0.315272891453232
+ByteSpark,gujarati,submission1.csv,0.18612933945522128
+ByteSpark,hindi,submission1.csv,0.1807868763975634
+Curious Coders,gujarati,run1.csv,0.18919048647610817
+Curious Coders,hindi,run1.csv,0.18098377281947262
+CUET_SSTM,hindi,run1.csv,0.237095531587057
+ivSUM,gujarati,run1.csv,0.09692671394799053
+ivSUM,gujarati,run4.csv,0.33707287439806555
+ivSUM,gujarati,run3.csv,0.33707287439806555
+ivSUM,gujarati,run2.csv,0.33707287439806555
+ivSUM,hindi,run1.csv,0.19702620003824825
+ivSUM,hindi,run4.csv,0.17818249458874458
+ivSUM,hindi,run3.csv,0.3425764614789005
+ivSUM,hindi,run2.csv,0.21326077802610696
+f4ctual,gujarati,run1.csv,0.06772908366533865
+f4ctual,gujarati,run3.csv,0.11791561408346335
+f4ctual,gujarati,run2.csv,0.03636363636363636
+f4ctual,hindi,run1.csv,0.09692671394799053
+f4ctual,hindi,run4.csv,0.03571428571428571
+f4ctual,hindi,run3.csv,0.09692671394799053
+f4ctual,hindi,run2.csv,0.09692671394799053
+Trojan Horses,gujarati,run1.csv,0.2100573038073038
+Trojan Horses,gujarati,run2.csv,0.24557060801038677
+Trojan Horses,hindi,run1.csv,0.21150256642257026
+Trojan Horses,hindi,run2.csv,0.22869564833386768
